@@ -1,0 +1,8 @@
+{
+  "name": "ignite-feed",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/CauueSanttos/ignite-feed.git",
+  "author": "Cauê Santos <cauedossantossilva@hotmail.com>",
+  "license": "MIT"
+}
