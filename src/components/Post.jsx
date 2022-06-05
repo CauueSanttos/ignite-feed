@@ -1,4 +1,5 @@
 import React from 'react';
+import Comment from './Comment';
 
 import styles from './Post.module.css';
 
@@ -48,6 +49,12 @@ function Post() {
           <button type="submit">Publicar</button>
         </footer>
       </form>
+
+      <div className={styles.commentList}>
+        <Comment />
+        <Comment />
+        <Comment />
+      </div>
     </article>
   );
 }
