@@ -1,4 +1,6 @@
 import React from 'react';
+
+import Avatar from './Avatar';
 import Comment from './Comment';
 
 import styles from './Post.module.css';
@@ -8,8 +10,7 @@ function Post() {
     <article className={styles.post}>
       <header>
         <div className={styles.author}>
-          <img 
-            className={styles.avatar}
+          <Avatar
             src="https://github.com/CauueSanttos.png" 
           />
 
