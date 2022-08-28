@@ -31,6 +31,14 @@ function Post({ author, content, publishedAt }) {
     setNewCommentText(event.target.value);
   }
 
+  function deleteComment(indexComment) {
+    const commentsWithoutDeletedOne = commentList.filter((_, index) => {
+      return index !== indexComment
+    });
+
+    setCommentList([...commentsWithoutDeletedOne]);
+  }
+
   return (
     <article className={styles.post}>
       <header>
@@ -84,7 +92,13 @@ function Post({ author, content, publishedAt }) {
 
       <div className={styles.commentList}>
         {commentList.map((text, index) => {
-          return <Comment key={index} content={text} />
+          return (
+            <Comment 
+              key={index} 
+              content={text} 
+              onDeleteComment={() => deleteComment(index)}
+            />
+          );
         })}
       </div>
     </article>
