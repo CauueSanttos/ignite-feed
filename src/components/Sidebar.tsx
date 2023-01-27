@@ -14,7 +14,7 @@ function Sidebar() {
       <div className={styles.profile}>
         <Avatar src="https://github.com/cauueSanttos.png" />
 
-        <strong>Cauê Santos</strong>
+        <b>Cauê Santos</b>
         <span>Developer</span>
       </div>
 
